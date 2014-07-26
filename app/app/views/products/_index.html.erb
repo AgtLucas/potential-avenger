@@ -3,8 +3,8 @@
   <tr>
     <td><%= product.name %></td>
     <td><%= number_to_currency product.price %></td>
-    <td><%= link_to "Edit" edit_product_path(product), remote: true, class: "btn" %></td>
-    <td><%= link_to "Delete" product_delete_path(product), remote: true, class: "btn btn-danger" %></td>
+    <td><%= link_to "Edit", edit_product_path(product), remote: true, class: "btn" %></td>
+    <td><%= link_to "Delete", product_delete_path(product), remote: true, class: "btn btn-danger" %></td>
   </tr>
 
 <% end %>
